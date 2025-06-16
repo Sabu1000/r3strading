@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const   ExperienceSection = () => {
+const ExperienceSection = () => {
     useEffect(() => {
         expCards.forEach((card, index) => {
             console.log(`Logo ${index + 1}:`, card.logoPath);
@@ -62,29 +62,29 @@ const   ExperienceSection = () => {
     return (
         <section id="results" className='w-full md:mt-40 mt-20 section-padding xl:px-0 scroll-mt-24'>
             <div className='w-full h-full md:px-20 px-5'>
-               <TitleHeader
+                <TitleHeader
                     title="Client-Focused Solutions"
                     sub="Driving Technology-Enabled Business Transformation"
                 />
                 <div className='mt-32 relative'>
                     <div className='relative z-50 xl:space-y-32 space-y-10'>
                         {expCards.map((card, index) => (
-                            <div key={card.title} className='exp-card-wrapper'>
+                            <div key={card.title} className='exp-card-wrapper flex flex-col md:flex-row'>
                                 <div className='xl:w-2/6 flex items-center justify-center'>
                                     <GlowCard card={card} index={index}>
                                         <div className="flex items-center justify-center bg-zinc-900 rounded-2xl p-6 shadow-lg">
-                                        <img 
-                                            src={card.imgPath} 
-                                            alt={card.title} 
-                                            className="w-32 h-32 object-contain rounded-xl border-4 border-zinc-800"
-                                            onError={(e) => {
-                                            console.error(`Failed to load image: ${card.imgPath}`);
-                                            e.target.style.display = 'none';
-                                            }}
-                                        />
+                                            <img 
+                                                src={card.imgPath} 
+                                                alt={card.title} 
+                                                className="w-32 h-32 object-contain rounded-xl border-4 border-zinc-800"
+                                                onError={(e) => {
+                                                    console.error(`Failed to load image: ${card.imgPath}`);
+                                                    e.target.style.display = 'none';
+                                                }}
+                                            />
                                         </div>
                                     </GlowCard>
-                                    </div>
+                                </div>
                                 <div className='xl:w-4/6'>
                                     <div className='flex items-start'>
                                         <div className='timeline-wrapper'>
@@ -100,7 +100,7 @@ const   ExperienceSection = () => {
                                                     className="w-12 h-12 object-contain"
                                                     onError={(e) => {
                                                         console.error(`Failed to load logo: ${card.logoPath}`);
-                                                        e.target.src = '/images/placeholder-logo.png'; // Fallback
+                                                        e.target.src = '/images/placeholder-logo.png';
                                                         e.target.style.display = 'none';
                                                         e.target.parentNode.innerHTML = `<div class="flex items-center justify-center w-full h-full text-white font-bold text-2xl">${card.title.charAt(0)}</div>`;
                                                     }}

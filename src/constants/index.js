@@ -152,7 +152,7 @@ const expCards = [
     review:
       "This consulting team transformed our legacy systems into a robust cloud-native infrastructure. Their strategic insight and technical delivery were key to a smooth migration.",
     imgPath: "/images/randomcompanylogo1.png",
-    logoPath: "/images/mainr3slogo.png",
+    logoPath: "/images/r3slogo1.png",
     title: "Cloud Solutions Architect",
     date: "March 2023 – Present",
     responsibilities: [
@@ -165,7 +165,7 @@ const expCards = [
     review:
       "The cybersecurity framework implemented by this team gave us peace of mind. They handled risk assessment, identity access, and compliance flawlessly.",
     imgPath: "/images/randomcompanylogo2.png",
-    logoPath: "/images/mainr3slogo.png",
+    logoPath: "/images/r3slogo1.png",
     title: "Cybersecurity Consultant",
     date: "January 2021 – February 2023",
     responsibilities: [
@@ -178,7 +178,7 @@ const expCards = [
     review:
       "They led our digital transformation from planning through execution. Their agile leadership and technical roadmap reshaped our operations across departments.",
     imgPath: "/images/randomcompanylogo3.png",
-    logoPath: "/images/mainr3slogo.png",
+    logoPath: "/images/r3slogo1.png",
     title: "Digital Transformation Lead",
     date: "July 2019 – December 2020",
     responsibilities: [

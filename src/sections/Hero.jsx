@@ -20,9 +20,9 @@ const Hero = () => {
         }}
       >
         <img 
-          src="/images/logos/r3slogo.png" 
+          src="/images/r3slogo1.png" 
           alt="background" 
-          className="w-12 h-auto md:w-25 rounded-lg"
+          className="w-32 h-auto md:w-48 rounded-lg"
         />
       </div>
 
